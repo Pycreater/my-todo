@@ -1,5 +1,10 @@
+import React, { Suspense } from "react";
 import Update from "@/app/components/Update";
 
 export default function UpdatePage() {
-  return <Update />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Update />
+    </Suspense>
+  );
 }
