@@ -7,7 +7,7 @@ import axios from "axios";
 const Update = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const id = searchParams.get("id");
+  const id = searchParams.get("id") as string;
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
